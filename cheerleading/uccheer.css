@@ -1,0 +1,557 @@
+/* @license
+ * MyFonts Webfont Build ID 1316338, 2011-10-03T10:50:35-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Proxima Nova Thin by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+ * Licensed pageviews: 10,000,000
+ *
+ * Webfont: Proxima Nova Regular by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+ * Licensed pageviews: 10,000,000
+ *
+ * Webfont: Proxima Nova Semibold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+ * Licensed pageviews: 10,000,000
+ *
+ * Webfont: Proxima Nova Light by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+ * Licensed pageviews: 10,000,000
+ *
+ * Webfont: Proxima Nova Bold by Mark Simonson
+ * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+ * Licensed pageviews: 10,000,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=1316338
+ * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+ *
+ * © 2011 Bitstream Inc
+*/
+
+
+/* ANIMATIONS */
+@-webkit-keyframes vis {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes vis {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bordermove {
+  from {
+    width: 0;
+    margin-left: 50%
+  }
+
+  to {
+    width: 50%;
+    margin-left: 25%
+  }
+}
+
+@keyframes bordermove {
+  from {
+    width: 0;
+    margin-left: 50%
+  }
+
+  to {
+    width: 50%;
+    margin-left: 25%
+  }
+}
+/* END ANIMATIONS */
+
+html,
+body,
+#mega-container {
+  margin: 0 auto;
+  height: 100%;
+  font-family: ProximaNovaT-Thin;
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'ProximaNova-Semibold';
+}
+
+h2 {
+  font-family: 'ProximaNova-Semibold';
+}
+
+h3 {
+  font-family: 'ProximaNova-Regular';
+}
+
+h4 {
+  font-family: 'ProximaNova-Semibold';
+}
+
+h5 {
+  font-family: 'ProximaNova-Bold';
+}
+
+strong {
+  font-family: 'ProximaNova-SemiBold';
+}
+
+strong.extra {
+  font-family: 'ProximaNova-Bold';
+}
+
+.desktop-only {
+  display: none;
+}
+
+.content a {
+  font-family: 'ProximaNova-SemiBold';
+}
+
+section {
+  min-height: 100vh;
+  height: fit-content;
+  max-width: 100vw;
+}
+
+section .content {
+  padding: 26px 26px 50px;
+  margin: auto;
+}
+
+h2.mobile-only {
+  color: white;
+  margin: 0;
+  padding: 26px 0 0 26px;
+}
+
+#landing {
+  background-color: #800000;
+  padding-bottom: 50px;
+}
+
+@media (prefers-reduced-motion) {
+  .landing-logo {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  #landing .navbar {
+    width: 50%;
+    margin-left: 25%;
+    animation: none;
+  }
+}
+
+.nav-wrapper, .navbar {
+  /* mobile-first - navbar is hidden */
+  display: none;
+}
+
+#landing .link {
+  -webkit-animation: vis 1.5s 1 forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: vis 1.5s 1 forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion) {
+  #landing .link {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+#about {
+  background: url(Media/UCHomecomingCHEER2016_053.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about .content,
+#join .content {
+  font-size: 3.5vh;
+}
+
+#donate .content {
+  font-size: 2.5vh;
+}
+
+#roster {
+  background-color: #800000;
+}
+
+#join {
+  background: url(Media/group.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#photos {
+  background-color: #800000;
+}
+
+#donate {
+  height: fit-content;
+  min-height: 100%;
+  background: url(Media/UCHomecomingCHEER2016_072.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.link {
+  display: inline-block;
+  margin-left: 5.75%;
+  margin-right: 5.75%;
+  margin-top: 1%;
+}
+
+.link a {
+  color: black;
+}
+
+.link a:hover {
+  color: #767676;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.roster-info,
+.roster-info-nm {
+  font-size: 12px;
+}
+
+.roster-pos {
+  padding-top: 10%;
+  float: right;
+}
+
+.roster-firstname {
+  margin-bottom: 0;
+  font-family: 'ProximaNova-Regular';
+}
+
+.roster-lastname {
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+
+.overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.overlay .content a,
+.album-container a {
+  color: #800000;
+}
+
+.overlay a:hover {
+  color: #642822;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.content {
+  height: 75%;
+}
+
+.roster-container,
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.entry-container {
+  position: relative;
+  background-size: contain;
+  height: 450px;
+  width: 300px;
+}
+
+.roster-info,
+.roster-info-nm {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+  opacity: 1;
+  z-index: 200;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: left;
+  text-justify: none;
+}
+
+.roster-info-text {
+  margin-left: 4%;
+  margin-right: 2%;
+}
+
+.entry-container:hover .roster-info {
+  opacity: 1;
+}
+
+.album-info {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  opacity: 1;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  transition: background 0.5s;
+}
+
+.album-info-text {
+  width: 100%;
+  font-size: 1.75vh;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-container {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background-size: contain;
+}
+
+#footer {
+  background-color: #800000;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  font-size: 1vh;
+}
+
+/* Responsive CSS */
+
+
+/* larger than tablets */
+@media only screen and (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  /* navbar only shows up for non-mobile views */
+  #landing .navbar {
+    -webkit-animation: bordermove 1.5s 1;
+    animation: bordermove 1.5s 1;
+  }
+
+  #join .content {
+    font-size: 2.5vw;
+  }
+
+  #donate .content {
+    font-size: 2vw;
+  }
+
+  .content {
+    padding: 4% 15% 0 15%;
+    font-size: 2.75vw;
+    width: 80%;
+  }
+
+  .roster-container {
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .photos-container {
+    display: grid;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+
+  .album-info:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transition: background 0.5s;
+  }
+
+  .album-info-text {
+    font-size: 1.75vw;
+  }
+
+  .landing-logo {
+    margin-left: 35%;
+    margin-top: 15%;
+    width: 30%;
+    height: auto;
+    -webkit-animation: vis 3s 1;
+    animation: vis 3s 1;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    max-height: 10%;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 25%;
+    margin-bottom: 26px;
+    border-radius: 5px;
+    cursor: default;
+    font-size: 1vw;
+    justify-content: space-evenly;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .navbar .current-nav a,
+  .overlay .navbar .current-nav a {
+    color: #800000;
+  }
+
+  .nav-wrapper {
+    display: block;
+    padding-top: 5%;
+  }
+
+  .entry-container:hover .roster-info {
+    opacity: 0;
+  }
+
+  .album-container {
+    position: relative;
+    background-size: contain;
+  }
+
+  #footer {
+    font-size: 0.5vw;
+  }
+
+  a.footer-link {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+
+  a.footer-link:hover {
+    color: #767676;
+    cursor: pointer;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1799px) {
+  .roster-container {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+
+  .entry-container {
+    height: 375px;
+    width: 250px;
+  }
+
+  .photos-container {
+    grid-template-columns: repeat(auto-fill, 450px);
+  }
+
+  .album-container {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2299px) {
+  .entry-container {
+    height: 450px;
+    width: 300px;
+  }
+
+  .roster-info,
+  .roster-info-nm {
+    font-size: 22px;
+  }
+
+  .roster-container {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+
+  .photos-container {
+    grid-template-columns: repeat(auto-fill, 600px);
+  }
+
+  .album-container {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 2300px) {
+  .entry-container {
+    height: 600px;
+    width: 400px;
+  }
+
+  .roster-info,
+  .roster-info-nm {
+    font-size: 26px;
+  }
+
+  .roster-container {
+    grid-template-columns: repeat(auto-fill, 400px);
+  }
+
+  .photos-container {
+    grid-template-columns: repeat(auto-fill, 900px);
+  }
+
+  .album-container {
+    height: 600px;
+    width: 900px;
+  }
+}
